@@ -1,0 +1,228 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menipozicioniranje {
+  display: inline-block;
+  width: 100%;
+}
+.registracijapozicioniranje {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+#header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#header .logo {
+  display: inline-block;
+  margin: 0 auto;
+}
+#header .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+#header .moto {
+  display: inline-block;
+  margin: 0 auto;
+}
+#header .meni {
+  display: inline-block;
+  width: 100%;
+  background-color: coral;
+}
+#header .meni ul {
+  background-color: aquamarine;
+}
+#header .meni ul li {
+  padding: 5px;
+  display: inline-block;
+}
+#header .meni ul li a {
+  text-decoration: none;
+  color: black;
+}
+#header .meni ul li:hover {
+  background-color: yellow;
+}
+#glavni {
+  text-align: center;
+}
+#glavni .registracija {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+#glavni .registracija label {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+#glavni .registracija input {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+  margin: 5px;
+  text-align: left;
+}
+#glavni .registracija select {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+  margin: 5px;
+}
+#glavni .registracija option {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+#glavni .Proizvodi {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+#glavni .Proizvodi h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+#glavni .Proizvodi .p1 {
+  margin: 0 auto;
+  width: 100%;
+}
+#glavni .Proizvodi .p1 .informacije {
+  margin: 0 auto;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#glavni .Proizvodi .p1 .informacije .p {
+  border: 2px solid rgba(39, 187, 179, 0.247);
+  border-radius: 40px;
+  margin: 5px;
+  padding: 5px;
+}
+#glavni .Proizvodi .p1 .informacije .p img {
+  width: 200px;
+}
+#glavni .Proizvodi .p1 .informacije .p button {
+  background-color: rgba(50, 205, 205, 0.37);
+  padding: 2px;
+  border-radius: 5px;
+  margin: 2px;
+}
+#glavni .nama {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#glavni .nama h1 {
+  text-align: center;
+}
+#glavni .nama .tekst {
+  margin: 0 auto;
+  width: 30%;
+}
+#glavni .slike {
+  margin: 0 auto;
+}
+#glavni .slike img {
+  width: 300px;
+}
+#glavni .deljenje {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 50px;
+}
+#glavni .deljenje .kontakt {
+  padding: 20px;
+  text-align: center;
+}
+#glavni .deljenje .kontakt textarea {
+  resize: none;
+  height: 100px;
+  width: 400px;
+}
+#glavni .deljenje .kontakt input {
+  width: 200px;
+}
+#glavni .deljenje .kontakt button:hover {
+  background-color: cadetblue;
+}
+#glavni .deljenje .kontakt label {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+#glavni .deljenje .mapa iframe {
+  width: 100%;
+}
+.vesti {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+.vesti img {
+  height: auto;
+  width: 300px;
+  border-radius: 15px;
+}
+.vesti .vesti1 {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+#h1vesti {
+  text-align: center;
+}
+footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: darkcyan;
+  padding: 10px;
+}
+.ikonica {
+  display: none;
+  background: transparent;
+  float: right;
+}
+.ikonica img {
+  width: 30px;
+}
+.ikonica:focus {
+  outline: none;
+}
+.ikonicamenu {
+  clear: both;
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .vesti {
+    grid-template-columns: 1fr;
+  }
+  .informacije {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .deljenje {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ikonica {
+    display: block;
+  }
+  #header .meni nav ul {
+    display: none !important;
+  }
+  .informacije {
+    grid-template-columns: 1fr !important;
+  }
+}
